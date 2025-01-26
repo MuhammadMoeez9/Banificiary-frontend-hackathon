@@ -8,6 +8,7 @@ import Signup from "./page/signup";
 import Slip from "./page/Slip";
 import DepartmentManger from "./page/DepartmentManager";
 import AdminPanel from "./page/AdminPanel";
+import Homepage from "./page/Home";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Signup></Signup>}></Route>
+          <Route path="/home" element={<Homepage></Homepage>}></Route>
           <Route path="/login" element={<Login></Login>}></Route>
           <Route path="/signup" element={<Signup></Signup>}></Route>
           <Route path="/adminpanel" element={<AdminPanel></AdminPanel>}></Route>
